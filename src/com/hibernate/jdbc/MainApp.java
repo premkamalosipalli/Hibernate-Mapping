@@ -11,7 +11,7 @@ public class MainApp {
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Instructor.class)
 				.addAnnotatedClass(InstructorDetail.class).addAnnotatedClass(Course.class).addAnnotatedClass(Review.class).addAnnotatedClass(Student.class).buildSessionFactory();
 		Session session = factory.getCurrentSession();
-
+		//Crud,Development Environment and Annotations 
 		//One to One Mapping using Instructor and Course tables 
 		
 		// creation of objects
